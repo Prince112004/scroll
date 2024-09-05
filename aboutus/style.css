@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    /* position: relative;
+    overflow: hidden; */
+}
+
+#aboutus{
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+
+}
+.text{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.text h1{
+    font-size: 4vw;
+}
+.aboutbox{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about{
+    border-radius: 2vw;
+    height:65%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vw;
+    padding-top: 4vw;
+    overflow: hidden;
+    transition: 0.3s linear;
+}
+.about:hover{
+    transform: translateY(-5%);
+}
+.imgdiv{
+    height: 5vw;
+    width: 5vw;
+}
+.imgdiv img{
+    margin-left: -8.1vw;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.gradientdiv1{
+    border-top-right-radius: 3vw;
+    margin-top: 2vw;
+    width: 100%;
+    height: 70%;
+    
+}
+
+.cl1{
+    width: 100%;
+    padding-left: 0.5vw;
+    margin-top: 4vw;
+}
+.cl1 h1{
+    font-size: 2vw;
+}
+
+.cl2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.2;
+    padding-left: 0.5vw;
+}
+.cl2 h4{
+    font-size: 1.3vw;
+    cursor: pointer;
+}
+#gradient1 {
+    background:  linear-gradient(rgba(255, 255, 255, 0.937), #cedaee);;
+}
+#gradient2{
+    background: linear-gradient(white,#d7948b);
+
+}
+
+#gradient3{
+    background: linear-gradient(white,#ebd397);
+
+}
+#gradient4{
+    background: linear-gradient(white,#9ed6be);
+}
+.learnmore{
+    height: 2vw;
+    width: 10vw;
+    background-color: #d7948b;
+    border-radius: 5px;
+    margin-left: 5vw;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.learnmore h3{
+    font-size: 1.4vw;
+}
+
+@media(max-width:600px){
+    #aboutus{
+        height: 150vh;
+    }
+    .aboutbox{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 2vw;
+    }
+    .about{
+        margin-top: -10vw;
+        height:100%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .imgdiv{
+        margin-top: 25vw;
+        margin-left: -50vw;
+        height: 10vw;
+        width: 10vw;
+    }
+    .text h1{
+        font-size: 9vw;
+    }
+    .gradientdiv1{
+        border-top-right-radius: 3vw;
+        margin-top: 2vw;
+        width: 100%;
+        height: 70%;
+        background-color: rgb(0, 0, 0);
+        
+    }
+    .cl1{
+        width: 100%;
+        padding-left: 0.5vw;
+        margin-top: 4vw;
+    }
+    .cl1 h1{
+        font-size: 6vw;
+    }
+    
+    .cl2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        line-height: 1.2;
+        padding-left: 0.5vw;
+    }
+    .cl2 h4{
+        font-size: 4vw;
+        cursor: pointer;
+    }
+
+
+}
+
+
+
+
+#mob{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mobile{
+    height: 90%;
+    width: 25%;
+    padding:0.8vw;
+    border-radius: 1vh;
+    background-color: #000000;
+}
+#inn{
+    height:100%;
+    width: 100%;
+    border-radius: 1vh;
+    padding:0.5vw;
+}
+#up{
+    height: 50%;
+    width:100%;
+    padding:0.1vw;
+    border-radius: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.421);
+    overflow: hidden;
+}
+#down{
+
+    height: 50%;
+    width:100%;
+    padding:1vw 0vw;
+}
+#down_down{
+    height: 50%;
+    width: 100%1;
+}
+#down_up{
+    height: 50%;
+    width:100%;
+    display: flex;
+    gap:1vw;
+}
+#down h3{
+    font-size:2vw;
+    font-weight: 300;
+}
+#down-right{
+    width: 40%;
+    height: 100%;
+    padding:5vh;
+}
+#down-left{
+    width: 60%;
+    height: 100%;
+    padding: 1vh;
+}
+video, img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* 
+canvas{
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.page{
+    height: 100vh;
+    width: 100%;
+    background-color: #9ed6be;
+} */
